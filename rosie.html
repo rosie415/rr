@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROSIE</title>
+   <style>
+    /* 清除浮动 */
+    .clearfix::after{
+     content: "";
+     display: table;
+     clear: both;}
+   html,body {
+      width: 100%;
+      height: 100%;
+    }
+    .main-box{
+      width: 1094px;
+      margin: 0 auto;
+    }
+    .name{
+      text-align: center; 
+      font-size: 38px;
+      color: #adfedc
+    }
+    .main-description{
+      text-align: center; 
+      font-size: 28px;
+      color: #adfedc
+    }
+    .items-box{
+      padding: 0;
+      transition: 0.3s 
+    }
+    .item{
+      list-style: none;
+      width: 23%;
+      height: 500px;
+      float: left;
+      border: 1px solid 000000;
+      overflow: hidden;
+      margin-right: 15px;
+      border-radius: 10px; 
+    }
+    .item:hover{
+      cursor: pointer;
+      transform: translateY(-10px);
+    }
+    .item-img {
+      width: 100%;
+      height: 252px;
+      background-color:#FFFFCC
+    }
+    .item-img img{
+      width: 100%; 
+    }
+    .item-title{
+      color:black
+    }
+    </style>
+</head>
+<body>
+  <div class="main-box">
+      <h1 class="name">ROSIE RONG</h1>
+      <p class="main-description">我的组成</p>
+      <ul class="items-box">
+        <li class="item">
+          <div class="item-img">
+            <img src="images/pizza.png" >
+          </div>
+          <div class="item-content">
+            <h2 class="item-title">Food</h2>
+            <p class="item-description">食物</p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item-img">
+            <img src="images/3D glasses.svg" >
+          </div>
+          <div class="item-content">
+            <h3 class="item-title">Cinephilia</h2>
+            <p class="item-description">电影</p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item-img">
+            <img src="images/MacBook Pro .png" >
+          </div>
+          <div class="item-content">
+            <h3 class="item-title">Crazy Jobs</h2>
+            <p class="item-description">工作</p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item-img">
+            <img src="images/book.png" >
+          </div>
+          <div class="item-content">
+            <h4 class="item-title">Books</h2>
+            <p class="item-description">阅读</p>
+          </div>
+        </li>
+      </ul>
+  </div>
+</body>
+</html>
